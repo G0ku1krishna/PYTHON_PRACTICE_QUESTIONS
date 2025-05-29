@@ -1,0 +1,18 @@
+'''' Write a programthat asks the user to guess a randomnumberbetween1and10. 
+Iftheyguess right, they get 10 points added to their score, and they lose 1 point 
+for anincorrect guess. Givethe user five numbers to guess and print their 
+score after all the guessing is done'''
+
+from random import randint
+score=0
+for i in range(5):
+    user_guess= int(input("enter an number between 1 and 10 : "))
+    computer_guess=randint(1,10)
+    
+    if user_guess==computer_guess:
+        score+=10
+        print("+10")
+    else:
+        score=score - 1
+        print("you lost",computer_guess)
+    
