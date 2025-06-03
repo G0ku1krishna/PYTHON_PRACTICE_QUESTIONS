@@ -1,0 +1,17 @@
+'''Write a function called matches that takes two strings as arguments and returns how many
+ matches there are between the strings. A match is where the two strings have the same char
+acter at the same index. For instance, 'python' and 'path' match in the first, third, and
+ fourth characters, so the function should return 3.'''
+
+def strings(a,b):
+    count=0
+    for i in range(min(len(a),len(b))):
+        if a[i]==b[i]:
+          #  print(a[i],b[i])
+            count+=1
+    return count
+a=input("Enter string 1 :")
+b=input("Enter string 2 :")
+c=min(len(a),len(b))
+print(strings(a, b))
+        
