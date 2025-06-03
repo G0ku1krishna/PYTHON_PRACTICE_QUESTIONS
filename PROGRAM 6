@@ -1,0 +1,19 @@
+'''Write a program that removes any repeated items from a lists othat each item appear s atmost
+ once. For instance, the list [1,1,2,3,4,3,0,0] would become [1,2,3,4,0].'''
+
+l=[] 
+length=int(input("Enter the length of the list :"))
+for i in range(length):
+    user_input=int(input("Enter numbers"))
+    l.append(user_input)
+
+L=[]
+for j in range(len(l)):
+    if l[j] in l and l[j] not in L:
+        L.append(l[j])
+print(L)
+        
+        
+        
+        
+   
